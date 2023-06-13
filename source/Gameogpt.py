@@ -2,14 +2,17 @@ import openai
 import streamlit as st
 from streamlit_chat import message
 
+from BotPersonas import Unrealabot
+
 with st.sidebar:
     openai_api_key = st.text_input('OpenAI API Key',key='chatbot_api_key')
     "[View the source code](hhttps://github.com/CaptnJohn/GameoGPT.git)"
 
 st.title("💬 Gameo GPT")
+
 #openai.api_key = st.secrets.openai_api_key
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": Unrealabot.greetMessage}]
 
 with st.form("chat_input", clear_on_submit=True):
     a, b = st.columns([4, 1])

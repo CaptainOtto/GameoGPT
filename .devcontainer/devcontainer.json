@@ -4,7 +4,7 @@
         "codespaces": {
             "openFiles": [
                 "README.md",
-                "Gameogpt.py"
+                "source/Gameogpt.py"
             ]
         },
         "vscode": {
@@ -25,7 +25,7 @@
     // Use 'postAttachCommand' to run commands after a tool has attached to the container.
     // Start the app.
     "postAttachCommand": {
-        "server": "streamlit run Gameogpt --server.enableCORS false --server.enableXsrfProtection false"
+        "server": "streamlit run source/Gameogpt --server.enableCORS false --server.enableXsrfProtection false"
     },
     "portsAttributes": {
         "8501": {
