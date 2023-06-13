@@ -4,10 +4,9 @@ from streamlit_chat import message
 
 with st.sidebar:
     openai_api_key = st.text_input('OpenAI API Key',key='chatbot_api_key')
-    "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
+    "[View the source code](hhttps://github.com/CaptnJohn/GameoGPT.git)"
 
-st.title("💬 Streamlit GPT")
+st.title("💬 Gameo GPT")
 #openai.api_key = st.secrets.openai_api_key
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
