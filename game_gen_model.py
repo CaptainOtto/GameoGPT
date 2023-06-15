@@ -1,6 +1,6 @@
 import streamlit as st
 
-class GameInstructions:
+class GameGenModel:
     def __init__(self, engine, dimension, artStyle, genre, description):
         self.engine = engine
         self.dimension = dimension
@@ -19,3 +19,4 @@ class GameInstructions:
         st.write(f"Art Style: {self.artStyle}")
         st.write(f"Genre: {self.genre}")
         st.write(f"Description: {self.description}")
+
