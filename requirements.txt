@@ -1,6 +1,5 @@
 streamlit
-langchain
-openai
-google-search-results
-anthropic
 streamlit-chat
+streamlit-extras
+langchain
+altair==4.0
