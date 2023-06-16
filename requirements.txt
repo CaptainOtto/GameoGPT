@@ -3,3 +3,4 @@ streamlit-chat
 streamlit-extras
 langchain
 altair==4.0
+openai
