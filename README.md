@@ -2,6 +2,8 @@
 
 Simple python project for testing llm chains with open ai as well as Stream lit. Short project timeframe only few hours.
 
+To test the app click this [link](https://gameochat.streamlit.app/)
+
 ## Instructions
 
 * Add your open ai key.
