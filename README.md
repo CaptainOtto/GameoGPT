@@ -1,6 +1,6 @@
 # GameoGPT
 
-Simple project for testing llm chains with open ai, very basic only spending about a day on research with streamlit and language models. So it is in a very rough state.
+Simple python project for testing llm chains with open ai as well as Stream lit. Short project timeframe only few hours.
 
 ## Instructions
 
