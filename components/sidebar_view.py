@@ -1,5 +1,10 @@
 import streamlit as st
+from streamlit_extras.buy_me_a_coffee import button as buymeacoffeebutton
+
 from streamlit_extras.add_vertical_space import add_vertical_space
+
+buy_me_a_coffe = """<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="capnjohn" data-color="#FFDD00" data-emoji="🍺"  data-font="Cookie" data-text="Buy me a beer" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>"""
+
 
 def set_openai_api_key(api_key: str):
     st.session_state["OPENAI_API_KEY"] = api_key
@@ -31,5 +36,7 @@ def sidebar_view():
             openai_ui()
 
         add_vertical_space(5)
+
+        buymeacoffeebutton(username="capnjohn", floating=False, width=221)
 
     
