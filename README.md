@@ -1,4 +1,4 @@
-# GameoGPT
+# Gameoe Chat
 
 Simple python project for testing llm chains with open ai as well as Stream lit. Short project timeframe only few hours.
 
