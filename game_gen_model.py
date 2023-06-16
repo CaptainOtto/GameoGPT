@@ -12,8 +12,6 @@ class GameGenModel:
         return f"Engine: {self.engine}, Dimension: {self.dimension}, Art Style: {self.artStyle}, Genre: {self.genre}, Description: {self.description}"
     
     def printSelection(self):
-        st.subheader("Instructions:")
-
         st.write(f"Engine: {self.engine}")
         st.write(f"Dimension: {self.dimension}")
         st.write(f"Art Style: {self.artStyle}")

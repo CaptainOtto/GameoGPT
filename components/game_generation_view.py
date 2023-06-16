@@ -23,18 +23,16 @@ def game_generation_view():
         models.game_gen_models.description = optionalDescription
 
     if st.button("Generate"):
-        st.header("Game Idea")
-
-        models.game_gen_models.printSelection()
-
         st.write("---")
 
-        generation_result = generate_result()
+        st.spinner("Generating...")
 
-        if generation_result == None:
-            st.error("Something went wrong, please try again later, check that your API key is valid and that you have enough credits")
-            return
+        with st.spinner("Generating..."):
+            generation_result = generate_result()
 
-        message(generation_result)
+            if generation_result == None:
+                return
 
-        st.download_button("Download", generation_result)
+            message(generation_result)
+
+            st.download_button("Download", generation_result)
